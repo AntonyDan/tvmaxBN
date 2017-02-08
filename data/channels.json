@@ -1,0 +1,466 @@
+{
+  "channels": [
+    {
+      "name": "365 дней ТВ",
+      "category": "Познавательный",
+      "id": "1",
+      "img_src": "img/channels/365.jpg"
+    },
+    {
+      "name": "Amedia 1",
+      "category": "Кино и сериалы",
+      "id": "2",
+      "img_src": "img/channels/Amedia.jpg"
+    },
+    {
+      "name": "Amedia 2",
+      "category": "Кино и сериалы",
+      "id": "2",
+      "img_src": "img/channels/Amedia2.jpg"
+    },
+    {
+      "name": "Cartoon Network",
+      "category": "Детский",
+      "id": "3",
+      "img_src": "img/channels/Cartoon_Network.jpg"
+    },
+    {
+      "name": "Euronews",
+      "category": "Новостной",
+      "id": "4",
+      "img_src": "img/channels/Euronews.jpg"
+    },
+    {
+      "name": "History",
+      "category": "Познавательный",
+      "id": "9",
+      "img_src": "img/channels/History.jpg"
+    },
+    {
+      "name": "Outdoor Channel",
+      "category": "Познавательный",
+      "id": "16",
+      "img_src": "img/channels/Outdoor_Channel.jpg"
+    },
+    {
+      "name": "STV",
+      "category": "Развлекательный",
+      "id": "18",
+      "img_src": "img/channels/STV.jpg"
+    },
+    {
+      "name": "Travel and Adventure",
+      "category": "Развлекательный",
+      "id": "20",
+      "img_src": "img/channels/Travel_and_Adventure.jpg"
+    },
+    {
+      "name": "Авто Плюс",
+      "category": "Развлекательный",
+      "id": "22",
+      "img_src": "img/channels/Auto_Plus.jpg"
+    },
+    {
+      "name": "АВТО24 (AVTO24)",
+      "category": "Развлекательный",
+      "id": "23",
+      "img_src": "img/channels/Auto24.jpg"
+    },
+    {
+      "name": "Беларусь 1",
+      "category": "Социальный",
+      "id": "24",
+      "img_src": "img/channels/Belarus1.jpg"
+    },
+    {
+      "name": "Беларусь 3",
+      "category": "Социальный",
+      "id": "25",
+      "img_src": "img/channels/Belarus3.jpg"
+    },
+    {
+      "name": "Беларусь 5",
+      "category": "Социальный",
+      "id": "26",
+      "img_src": "img/channels/Belarus5.jpg"
+    },
+    {
+      "name": "Беларусь 2",
+      "category": "Социальный",
+      "id": "27",
+      "img_src": "img/channels/Belarus2.jpg"
+    },
+    {
+      "name": "Бестселлер+",
+      "category": "Кино и сериалы",
+      "id": "29",
+      "img_src": "img/channels/Bestseller_plus.jpg"
+    },
+    {
+      "name": "ВТВ",
+      "category": "Развлекательный",
+      "id": "34",
+      "img_src": "img/channels/WTV.jpg"
+    },
+    {
+      "name": "Дом кино",
+      "category": "Кино и сериалы",
+      "id": "37",
+      "img_src": "img/channels/Home_of_kino.jpg"
+    },
+    {
+      "name": "Европа Плюс ТВ",
+      "category": "Музыкальный",
+      "id": "39",
+      "img_src": "img/channels/Europa_plus_tv.jpg"
+    },
+    {
+      "name": "Здоровое телевидение",
+      "category": "Познавательный",
+      "id": "40",
+      "img_src": "img/channels/Health_TV.jpg"
+    },
+    {
+      "name": "Кинокомедия",
+      "category": "Развлекательный",
+      "id": "42",
+      "img_src": "img/channels/Comedy.jpg"
+    },
+    {
+      "name": "Кухня ТВ",
+      "category": "Развлекательный",
+      "id": "43",
+      "img_src": "img/channels/kitchen.jpg"
+    },
+    {
+      "name": "Ля-минор",
+      "category": "Музыкальный",
+      "id": "44",
+      "img_src": "img/channels/La_minor.jpg"
+    },
+    {
+      "name": "Мир",
+      "category": "Социальный",
+      "id": "46",
+      "img_src": "img/channels/World.jpg"
+    },
+    {
+      "name": "МУЛЬТИМАНИЯ.ТВ",
+      "category": "Детский",
+      "id": "49",
+      "img_src": "img/channels/Multimania.jpg"
+    },
+    {
+      "name": "Наш Футбол (НТВ ПЛЮС НАШ ФУТБОЛ)",
+      "category": "Спортивный",
+      "id": "52",
+      "img_src": "img/channels/Our_football.jpg"
+    },
+    {
+      "name": "Наше новое кино",
+      "category": "Кино и сериалы",
+      "id": "53",
+      "img_src": "img/channels/Our_kino.jpg"
+    },
+    {
+      "name": "НТВ-Беларусь",
+      "category": "Социальный",
+      "id": "54",
+      "img_src": "img/channels/ntv_belarus.jpg"
+    },
+    {
+      "name": "ОНТ",
+      "category": "Социальный",
+      "id": "56",
+      "img_src": "img/channels/ont.jpg"
+    },
+    {
+      "name": "Оружие",
+      "category": "Познавательный",
+      "id": "57",
+      "img_src": "img/channels/weapons.jpg"
+    },
+    {
+      "name": "Охота и рыбалка",
+      "category": "Развлекательный",
+      "id": "58",
+      "img_src": "img/channels/hunting_fishing.jpg"
+    },
+    {
+      "name": "Православная телекомпания «Союз»",
+      "category": "Познавательный",
+      "id": "61",
+      "img_src": "img/channels/union.jpg"
+    },
+    {
+      "name": "Кинопремьера",
+      "category": "Кино и сериалы",
+      "id": "62",
+      "img_src": "img/channels/film_premiere.jpg"
+    },
+    {
+      "name": "Россия-Беларусь",
+      "category": "Социальный",
+      "id": "63",
+      "img_src": "img/channels/rtr_belarus.jpg"
+    },
+    {
+      "name": "Сетанта Спорт",
+      "category": "Спортивный",
+      "id": "66",
+      "img_src": "img/channels/setanta_sport.jpg"
+    },
+    {
+      "name": "Сетанта Спорт +",
+      "category": "Спортивный",
+      "id": "67",
+      "img_src": "img/channels/setanta_sport_plus.jpg"
+    },
+    {
+      "name": "Спорт 1",
+      "category": "Спортивный",
+      "id": "68",
+      "img_src": "img/channels/sport1.jpg"
+    },
+    {
+      "name": "Спорт 2",
+      "category": "Спортивный",
+      "id": "69",
+      "img_src": "img/channels/sport2.jpg"
+    },
+    {
+      "name": "СТВ",
+      "category": "Социальный",
+      "id": "70",
+      "img_src": "img/channels/stv_by.jpg"
+    },
+    {
+      "name": "ТВ-3",
+      "category": "Кино и сериалы",
+      "id": "74",
+      "img_src": "img/channels/tv3.jpg"
+    },
+    {
+      "name": "Телеканал «Детский»",
+      "category": "Детский",
+      "id": "76",
+      "img_src": "img/channels/kids_tv.jpg"
+    },
+    {
+      "name": "Телеканал «ЕвроКино»",
+      "category": "Кино и сериалы",
+      "id": "77",
+      "img_src": "img/channels/eurokino.jpg"
+    },
+    {
+      "name": "Телеканал «Иллюзион+»",
+      "category": "Кино и сериалы",
+      "id": "79",
+      "img_src": "img/channels/illusion_plus.jpg"
+    },
+    {
+      "name": "Телеканал «Ностальгия»",
+      "category": "Развлекательный",
+      "id": "80",
+      "img_src": "img/channels/nostalgi.jpg"
+    },
+    {
+      "name": "Телеканал «Россия-Культура» (Россия-К)»",
+      "category": "Познавательный",
+      "id": "81",
+      "img_src": "img/channels/russia_culture.jpg"
+    },
+    {
+      "name": "Телеканал «Русский Иллюзион»",
+      "category": "Кино и сериалы",
+      "id": "82",
+      "img_src": "img/channels/ru_illusion.jpg"
+    },
+    {
+      "name": "Телеканал «Совершенно секретно»",
+      "category": "Познавательный",
+      "id": "83",
+      "img_src": "img/channels/top_secret.jpg"
+    },
+    {
+      "name": "Телеканал 2х2",
+      "category": "Детский",
+      "id": "84",
+      "img_src": "img/channels/2х2.jpg"
+    },  
+    {
+      "name": "ТНТ International",
+      "category": "Развлекательный",
+      "id": "87",
+      "img_src": "img/channels/tnt.jpg"
+    },
+    {
+      "name": "Феникс плюс Кино",
+      "category": "Кино и сериалы",
+      "id": "90",
+      "img_src": "img/channels/phoenix_plus.jpg"
+    },
+    {
+      "name": "Boomerang",
+      "category": "Детский",
+      "id": "",
+      "img_src": "img/channels/Boomerang.jpg"
+    },
+    {
+      "name": "RuSong TV",
+      "category": "Музыкальный",
+      "id": "",
+      "img_src": "img/channels/Rusong.jpg"
+    },
+    {
+      "name": "Russian Travel Guide",
+      "category": "Познавательный",
+      "id": "",
+      "img_src": "img/channels/Russian_Travel_Guide.jpg"
+    },
+    {
+      "name": "Киномикс",
+      "category": "Кино и сериалы",
+      "id": "",
+      "img_src": "img/channels/kinomix.jpg"
+    },
+    {
+      "name": "Кинохит",
+      "category": "Кино и сериалы",
+      "id": "",
+      "img_src": "img/channels/kinohit.jpg"
+    },
+    {
+      "name": "Драйв",
+      "category": "Развлекательный",
+      "id": "",
+      "img_src": "img/channels/Drive.jpg"
+    },
+    {
+      "name": "Индийское кино",
+      "category": "Развлекательный",
+      "id": "",
+      "img_src": "img/channels/India.jpg"
+    },
+    {
+      "name": "Много ТВ",
+      "category": "Развлекательный",
+      "id": "",
+      "img_src": "img/channels/mnogo_tv.jpg"
+    },
+    {
+      "name": "Ретро",
+      "category": "Развлекательный",
+      "id": "",
+      "img_src": "img/channels/retro.jpg"
+    },
+    {
+      "name": "CBS Drama",
+      "category": "Кино и сериалы",
+      "id": "",
+      "img_src": "img/channels/CBS_Drama.jpg"
+    },    
+    {
+      "name": "CBS Reality",
+      "category": "Кино и сериалы",
+      "id": "",
+      "img_src": "img/channels/CBS_Reality.jpg"
+    },
+    {
+      "name": "Extreme Sports Сhannel",
+      "category": "Спортивный",
+      "id": "",
+      "img_src": "img/channels/Extreme_Sports_Сhannel.jpg"
+    },
+    {
+      "name": "JimJam",
+      "category": "Детский",
+      "id": "",
+      "img_src": "img/channels/JimJam.jpg"
+    },
+    {
+      "name": "Music Box",
+      "category": "Развлекательный",
+      "id": "",
+      "img_src": "img/channels/MusicBox.jpg"
+    },
+    {
+      "name": "Russian Music Box",
+      "category": "Музыкальный",
+      "id": "",
+      "img_src": "img/channels/RussianMusicBox.jpg"
+    },
+    {
+      "name": "World Fashion Channel",
+      "category": "Развлекательный",
+      "id": "",
+      "img_src": "img/channels/WorldFashionChannel.jpg"
+    },
+    {
+      "name": "Зоопарк",
+      "category": "Развлекательный",
+      "id": "",
+      "img_src": "img/channels/zoo.jpg"
+    },
+    {
+      "name": "Усадьба",
+      "category": "Развлекательный",
+      "id": "",
+      "img_src": "img/channels/Usadba.jpg"
+    },
+    {
+      "name": "ТВ3-Бел",
+      "category": "Развлекательный",
+      "id": "",
+      "img_src": "img/channels/tv3_bel.jpg"
+    },
+    {
+      "name": "Точка ТВ",
+      "category": "Развлекательный",
+      "id": "",
+      "img_src": "img/channels/tochcka_tv.jpg"
+    },
+    {
+      "name": "Юмор ТВ",
+      "category": "Развлекательный",
+      "id": "",
+      "img_src": "img/channels/humor_tv.jpg"
+    },
+    {
+      "name": "Время",
+      "category": "Развлекательный",
+      "id": "",
+      "img_src": "img/channels/time.jpg"
+    },
+    {
+      "name": "Карусель",
+      "category": "Детский",
+      "id": "",
+      "img_src": "img/channels/Carousel.jpg"
+    },
+    {
+      "name": "Музыка Первого",
+      "category": "Музыкальный",
+      "id": "",
+      "img_src": "img/channels/music1.jpg"
+    },
+    {
+      "name": "Телекафе",
+      "category": "Развлекательный",
+      "id": "",
+      "img_src": "img/channels/telecafe.jpg"
+    },
+    {
+      "name": "ТВ-21М",
+      "category": "Кино и сериалы",
+      "id": "",
+      "img_src": "img/channels/tv_21m.jpg"
+    },
+    {
+      "name": "8 канал",
+      "category": "Развлекательный",
+      "id": "",
+      "img_src": "img/channels/8channel.jpg"
+    }
+  ]
+}

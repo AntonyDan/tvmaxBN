@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <title>TVMaX | UI</title>
+    <link rel="stylesheet" href="css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="blue" ng-cloak>
+    <div class="wrapper">
+      <header class="header"><a class="logo" href="./#/"><img src="img/logo.png" alt="logo"></a>
+        <nav class="main-nav" ng-controller="navCtrl">
+          <ul class="main-nav__list">
+            <li class="main-nav__item" ng-class="{active: $route.current.activeTab === 'profile'}"><a class="main-nav__link" tabindex="1" href="./#/profile">Профиль</a></li>
+            <li class="main-nav__item" ng-class="{active: $route.current.activeTab === 'online-tv'}"><a class="main-nav__link" tabindex="2" href="./#/online-tv">Онлайн TV</a></li>
+            <li class="main-nav__item" ng-class="{active: $route.current.activeTab === 'schedule'}"><a class="main-nav__link" tabindex="3" href="./#/schedule">Расписание каналов</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content">
+        <div class="app-container" ng-controller="mainCtrl">
+          <div class="app-container__inner" ng-view></div>
+        </div>
+      </main>
+    </div>
+    <script src="//content.jwplatform.com/libraries/DbXZPMBQ.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

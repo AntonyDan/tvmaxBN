@@ -1,0 +1,13 @@
+
+<section class="section section--onlineTV">
+  <div class="container" id="container">
+    <div class="container__left container__left--mediaPlayer">
+      <div id="mediaPlayer"></div>
+    </div>
+    <div class="container__right container__right--mediaPlayer">
+      <ul class="container__list">
+        <li class="container__item" ng-class="{active: $index === selectedItem}" ng-repeat="channel in channels" ng-click="loadStream(); setActive($index); jumpToPlayer();"><a class="container__link" href=""><img class="container__img" ng-src="{{channel.img}}" alt="Иконка канала"/><strong class="container__channel-name">{{channel.name}}</strong></a></li>
+      </ul>
+    </div>
+  </div>
+</section>

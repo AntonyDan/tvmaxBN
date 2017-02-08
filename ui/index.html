@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>TVMaX | UI</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="blue" ng-cloak>
+    <div class="wrapper">
+      <header class="header"><a class="logo" href="./#/"><img src="img/logo.png" alt="logo"></a>
+        <nav class="main-nav">
+          <ul class="main-nav__list" ng-controller="navCtrl">
+            <li class="main-nav__item" ng-class="{active: $route.current.activeTab === 'profile'}"><a class="main-nav__link" tabindex="1" href="./#/profile">Профиль</a></li>
+            <li class="main-nav__item" ng-class="{active: $route.current.activeTab === 'online-tv'}"><a class="main-nav__link" tabindex="2" href="./#/online-tv">Онлайн TV</a></li>
+            <li class="main-nav__item" ng-class="{active: $route.current.activeTab === 'schedule'}"><a class="main-nav__link" tabindex="3" href="./#/schedule">Расписание каналов</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content">
+        <div class="app-container" ng-controller="mainCtrl">
+          <div class="app-container__inner" ng-view></div>
+        </div>
+      </main>
+    </div>
+    <!--Vendors-->
+    <script src="js/vendors.min.js"></script>
+    <script src="//content.jwplatform.com/libraries/DbXZPMBQ.js"></script>
+    <!--App-->
+    <script src="js/main.js"></script>
+    <!--Controllers-->
+    <script src="js/controllers/navCtrl.js"></script>
+    <script src="js/controllers/loginCtrl.js"></script>
+    <script src="js/controllers/mainCtrl.js"></script>
+    <script src="js/controllers/profileCtrl.js"></script>
+    <script src="js/controllers/onlineTvCtrl.js"></script>
+    <script src="js/controllers/scheduleCtrl.js"></script>
+    <!--Services-->
+    <script src="js/services/sessionService.js"></script>
+    <script src="js/services/loginService.js"></script>
+    <script src="js/services/userService.js"></script>
+    <script src="js/services/channelsService.js"></script>
+    <script src="js/services/scheduleService.js"></script>
+    <!--Config-->
+    <script src="js/config/config.js"></script>
+    <!--Filters-->
+    <script src="js/filters/timeFilter.js"></script>
+  </body>
+</html>

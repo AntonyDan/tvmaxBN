@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>TVMaX | Авторизация</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="gray" ng-cloak>
+    <div class="wrapper">
+      <div class="login-container"><a class="logo" href="http://tvmax.by"><img src="img/logo_login.png"></a>
+        <div class="login-form-wrapper" ng-controller="loginCtrl">
+          <form class="login-form" role="form" name="loginForm">
+            <div class="input-wrapper"><i class="icon icon-user"></i>
+              <input class="login-input" type="text" ng-model="user.login" name="login" placeholder="Имя пользователя" required>
+            </div>
+            <div class="input-wrapper"><i class="icon icon-key"></i>
+              <input class="login-input" type="password" ng-model="user.password" name="password" placeholder="Пароль" required>
+            </div>
+            <button class="login-submit" type="submit" ng-disabled="loginForm.$invalid" ng-click="login(user)">Войти</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/login.js"></script>
+  </body>
+</html>

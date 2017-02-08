@@ -1,0 +1,26 @@
+
+<section class="section section--schedule">
+  <div class="container" id="container">
+    <div class="container__right container__right--schedule">
+      <div class="schedule" id="schedule">
+        <ul class="schedule__days-list">
+          <li class="schedule__days-item" ng-class="{active: $index === selectedDate}" ng-repeat="date in dates" ng-click="setDate(); loadSchedule(); setActive($index, 'dates');"><a class="schedule__days-link" href="">{{date.date | date:'dd.MM.yyyy'}}</a></li>
+        </ul>
+        <header class="schedule__header">
+          <div class="schedule__img"><img ng-src="{{currentChannel.img}}"/></div>
+          <h2 class="schedule__channel-name">{{currentChannel.name}}</h2>
+        </header>
+        <ul class="schedule__main-list">
+          <li class="schedule__item" ng-repeat="programm in schedule"><strong class="schedule__time">{{programm.Start | time}}</strong>
+            <p class="schedule__description"><strong>{{programm.Title.Text}}</strong>.<span>{{programm.Desc.Text}}</span></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container__left container__left--schedule">
+      <ul class="container__list">
+        <li class="container__item container__item--schedule" ng-class="{active: $index === selectedItem}" ng-repeat="channel in channels" ng-click="setChannel(); loadSchedule(); setActive($index); jumpToSchedule();"><a class="container__link" href=""><img class="container__img" ng-src="{{channel.img}}" alt="Иконка канала"/><strong class="container__channel-name">{{channel.name}}</strong></a></li>
+      </ul>
+    </div>
+  </div>
+</section>

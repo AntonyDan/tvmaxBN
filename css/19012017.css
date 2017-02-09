@@ -1965,13 +1965,36 @@ line-height:1
 }
 
 @media only screen and (max-width:1024px){
-.tabs-inner__title{
+	.tabs-inner__title{
 
-font-size:26px;
+		font-size:26px;
 
-font-size:1.625rem
+		font-size:1.625rem
+	}
+}
+.tabs-inner__instruction{
+
+font-size:36px;
+
+font-size:2.25rem;
+color:#989694;
+font-family:robotolight;margin-bottom:15px;
+line-height:1
 }
 
+@media only screen and (max-width:1024px){
+	.tabs-inner__instruction{
+
+		font-size:26px;
+
+		font-size:1.625rem
+	}
+}
+.for-instruction li{
+	margin-bottom: 5px;
+}
+.for-instruction li a{
+	text-decoration: underline;	
 
 }
 

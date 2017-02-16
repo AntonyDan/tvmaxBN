@@ -2126,12 +2126,26 @@ display:flex;
 @media only screen and (max-width:1200px){
 .ability__item{
 
-display:block;margin-bottom:30px
+display:block;
+margin-bottom:30px;
 }
 
 
 }
-
+@media only screen and (min-width: 630px) and (max-width:1200px){
+	.ability__item{
+		margin-bottom:40px;
+		overflow: hidden;
+	}
+	.ability__pic.ability__pic--f-r{
+		width: 65%;
+	    float: right;	
+	}
+	.ability__pic.ability__pic--f-l {
+	    width: 65%;
+	    float: left;
+	}
+}
 .ability__item:last-child{
 margin-bottom:0
 }

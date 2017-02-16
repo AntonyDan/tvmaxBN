@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta content="ie=edge" http-equiv="x-ua-compatible"/>
     <meta name="description" content="Описание приставки TVMaX, её характеристики и преимущества"/>
-    <link rel="stylesheet" href="css/19012017.css"/>
-    <title>О TVMaX</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Регистрация</title>
     <script async="async">
       (function(){ var widget_id = 'CvYlmGOAYm';var d=document;var w=window;function l(){
       var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
@@ -29,21 +29,16 @@
             <h1 class="logo logo--header"><a href="." class="logo__link"> <img src="img/logo.png" alt="Логотип TVMaX"/></a></h1>
             <nav class="site-nav"><a href="#" id="menuButton" class="menu-button"><span class="burger-icon"></span></a>
               <ul class="site-nav__list">
-                <li class="site-nav__item "><a href="./about-tvmax.html" class="site-nav__link">О TVMaX</a></li>
-                <li class="site-nav__item"><a href="./channels.html" class="site-nav__link">Список каналов</a></li>
-                
-                <li class="site-nav__item"><a href="./contacts.html" class="site-nav__link">Контакты</a></li>
-                <li class="site-nav__item"><a href="http://tvmax.by/ui/login.html" class="site-nav__link">Личный кабинет</a></li>
-                <li class="site-nav__item site-nav__item--active"><a href="./registration.html" class="site-nav__link">Регистрация</a></li>
+                <li class="site-nav__item "><a href="about-tvmax.html" class="site-nav__link">О TVMaX</a></li>
+                <li class="site-nav__item"><a href="channels.html" class="site-nav__link">Список каналов</a></li>
+                <li class="site-nav__item"><a href="contacts.html" class="site-nav__link">Контакты</a></li>
+                <li class="site-nav__item"><a href="/ui/" class="site-nav__link">Личный кабинет</a></li>
+                <li class="site-nav__item site-nav__item--active"><a href="registration.html" class="site-nav__link">Регистрация</a></li>
               </ul>
             </nav>
           </div>
         </header>
         <main id="main" data-page="registration" class="main main--no-padding">
-          <div id="fullScreenPic" class="about-tvmax-bg"><a href="#" id="scrollDown" class="scroll-down"><i class="scroll-down__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 86.001 86.001">
-                  <path d="M5.907 21.004c-1.352-1.338-3.542-1.338-4.894 0-1.35 1.336-1.352 3.506 0 4.844l39.54 39.15c1.352 1.338 3.542 1.338 4.894 0l39.54-39.15c1.35-1.338 1.352-3.506 0-4.844-1.352-1.338-3.542-1.338-4.894-.002L43 56.707 5.907 21.004z" fill="#030104"></path>
-                </svg></i></a></div>
           <section class="registration">
             <div class="reg_tv-characteristics">
               <h2 class="reg_title">Телевидение</h2> 
@@ -58,23 +53,26 @@
                 <li class="reg_charachter__item">Хорошее качество видео независимо от скорости интернета</li>
               </ul>
             </div>
-            <form action="3" class="registration-form">
+            <form action="./reg.php" method="POST" class="registration-form" id="registration-form">
               <h2 class="reg-form_title">Регистрация</h2>
-              <div class="alert">Что-то введено неправильно</div>
-              <label for="formName">Имя</label><input id="formName" name="name" type="text">
-              <label for="formSurname">Фамилия</label><input id="formSurname" name="surname" type="text">
-              <label for="formPass">Придумайте пароль</label><input id="formPass" name="password" type="password">
-              <label for="formPass2">Повторите пароль</label><input id="formPass2" name="second-password" type="password">
-              <label for="formPasport">Личный номер паспорта</label><input id="formPasport" name="pasport-number" type="text">
-              <label for="formPhone">Мобильный телефон</label><input id="formPhone" name="phone-number" type="tel">
-              <label class="phone-code" for="formPhoneCode">На ваш мобильный номер, отправлен код подтверждения,
+              <input type="hidden" id="formToken" name="TOKEN" value="Ssf459Jkuui">
+              <label for="formFirstname">Имя</label><input id="formFirstname" name="first_name" type="text" required>
+              <label for="formLastname">Фамилия</label><input id="formLastname" name="last_name" type="text" required>
+              <label for="formPassword">Придумайте пароль <small><br>не менее 6 символов, состоящий из букв латинского алфавита или цифр</small></label><input id="formPassword" name="password" type="password" required>
+              <label for="formPasswordR">Повторите пароль</label><input id="formPasswordR" name="password_r" type="password" required>
+              <label for="formPassportNumber">Личный номер паспорта</label><input id="formPassportNumber" name="passport_number" type="text" required>
+              <label for="formEmail">Email</label><input id="formEmail" name="email" type="email" required>
+              <label for="formPhoneNumber">Мобильный телефон</label><input id="formPhoneNumber" name="phone_number" type="tel" required>
+              <label class="phone-code" for="formPhoneCode">На ваш мобильный номер будет отправлен код подтверждения,
                                       введите его ниже, чтобы продолжить регистрацию </label>
-                  <input id="formPhoneCode" name="phone-code" type="text">
-              <button class="reg-button">Получить код</button>
-              <div class="for-checkbox"><input type="checkbox" id="formCheck" name="confirm_checkbox">
+                  <input id="formPhoneCode" name="phone_code" type="text" required>
+              <button type="button" id="reg-button-get-code" class="reg-button">Получить код</button>
+              <div id="sendMsg" class="feedback-form__msg"></div>
+              <div class="for-checkbox"><input type="checkbox" id="formCheck" name="confirm_checkbox" required>
               <label for="formCheck" class="confirm_label">Ознакомлен и согласен с публичным договором</label></div>
               <p class="form-time"><span>*</span>  После подтверждения регистрации, услугой TVMAX можно будет воспользоваться бесплатно до 00.00 </p>
-              <button type="submit" class="reg-button submit-btn">Продолжить</button>
+              <div id="regMsg" class="feedback-form__msg"></div>
+              <button type="submit" class="reg-button submit-btn">Регистрация</button>
             </form>
           </section>
         </main>
@@ -146,7 +144,8 @@
             <li class="footer-menu__item"><a href="about-tvmax.html" class="footer-menu__link">О TVMaX</a></li>
             <li class="footer-menu__item"><a href="channels.html" class="footer-menu__link">Список каналов</a></li>
             <li class="footer-menu__item"><a href="contacts.html" class="footer-menu__link">Контакты      </a></li>
-            <li class="footer-menu__item"><a href="contacts.html" class="footer-menu__link">Личный кабинет</a></li>
+            <li class="footer-menu__item"><a href="/ui/" class="footer-menu__link">Личный кабинет</a></li>
+			<li class="footer-menu__item"><a href="registration.html" class="footer-menu__link">Регистрация</a></li>
           </ul>
         </nav>
         <div class="copyright">© 2017 «Деловая сеть»</div>
@@ -154,21 +153,17 @@
     </div>
     <div id="fullpageMenu" class="fullpage-menu fullpage-menu--hide">
       <ul class="fullpage-menu__list">
-        <li class="fullpage-menu__item"><a href="./about-tvmax.html" class="fullpage-menu__link">О TVMaX</a></li>
-        <li class="fullpage-menu__item"><a href="./channels.html" class="fullpage-menu__link">Список каналов</a></li>
-        <li class="fullpage-menu__item"><a href="./registration.html" class="fullpage-menu__link">Регистрация</a></li>
-        <li class="fullpage-menu__item"><a href="./contacts.html" class="fullpage-menu__link">Контакты</a></li>
-        <li class="fullpage-menu__item"><a href="http://tvmax.by/ui/login.html" class="fullpage-menu__link">Личный кабинет</a></li>
+        <li class="fullpage-menu__item"><a href="about-tvmax.html" class="fullpage-menu__link">О TVMaX</a></li>
+        <li class="fullpage-menu__item"><a href="channels.html" class="fullpage-menu__link">Список каналов</a></li>
+        <li class="fullpage-menu__item"><a href="contacts.html" class="fullpage-menu__link">Контакты</a></li>
+        <li class="fullpage-menu__item"><a href="/ui/" class="fullpage-menu__link">Личный кабинет</a></li>
+		<li class="fullpage-menu__item"><a href="registration.html" class="fullpage-menu__link">Регистрация</a></li>
       </ul>
     </div>
 
     <script src="js/19012017.js"></script>
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="js/jquery.mask.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      jQuery(document).ready(function() {
-        jQuery('#formPhone').mask("+000 (00) 000-00-00", {placeholder: "+375 (XX) XXX-XXX-XXX"});
-      });
-    </script>
+    <script src="js/reg.js"></script>
   </body>
 </html>

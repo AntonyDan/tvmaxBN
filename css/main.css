@@ -120,15 +120,7 @@ font-size:80px;
 font-size:5rem;
 font-family:robotomedium;color:#f0513d
 }
-.ability__title{
-	overflow: hidden;
-}
-.ability__title span{
-	margin-right: 5px;
-}
-.ability__title div{
-	float:left;
-}
+
 .ability__sub-list--line,.ability__title--line{
 position:relative
 }
@@ -1307,6 +1299,10 @@ margin-top:15px;
 color:#fff;font-family:robotoregular;cursor:pointer
 }
 
+.registration-form .feedback-form__msg {
+margin-bottom:15px;	
+}
+
 .feedback-form__msg--ok{
 background-color:#00e676
 }
@@ -1830,6 +1826,10 @@ h2.reg-form_title {
 	    font-size: 20px;
 	}
 }
+.reg-button[disabled] {
+	opacity: .4;
+    cursor: not-allowed
+}
 
 .submit-btn{
 	height: 50px;
@@ -2000,11 +2000,11 @@ line-height:1
 }
 .for-instruction li{
 	margin-bottom: 5px;
-	padding-left: 30px;
-	background: url(../img/icons/pdf.svg) no-repeat;
-	    background-size: 23px;
 }
+.for-instruction li a{
+	text-decoration: underline;	
 
+}
 
 .tabs-inner__title .small-text{
 color:#7d7d7d;

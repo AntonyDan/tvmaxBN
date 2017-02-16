@@ -16,9 +16,23 @@ app.factory('loginService', function($http, $location, $window, $rootScope, sess
       });
   }
 
-  function logout() {
-    if(sessionService.get('access_token')) sessionService.destroy('access_token');
-    $window.location.href = $rootScope.appUrl + 'login.html';
+  function logout(all = true) {
+    if(sessionService.get('access_token')) {
+      if(all) {
+	      $http.get('http://212.98.181.67/TV/api/Authorization/Logout', {
+	        headers: {"access_token": sessionService.get('access_token')}
+	      }).then(function success(response) {
+	    	  sessionService.destroy('access_token');
+	          $window.location.href = $rootScope.appUrl + 'login.html';
+	      }, function error(response) {
+	          console.error(response);
+	      });
+      }
+      else {
+    	  sessionService.destroy('access_token');
+    	  $window.location.href = $rootScope.appUrl + 'login.html';
+      }
+    }
   }
 
   function isLogged() {

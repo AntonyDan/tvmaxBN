@@ -2,7 +2,6 @@ var mainCtrl = app.controller('mainCtrl', function($scope, loginService, session
   'use strict';
 
   if(!loginService.isLogged()) {
-    alert('Вы не залогинились!');
     loginService.logout();
   }
 

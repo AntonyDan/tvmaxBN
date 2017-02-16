@@ -13,7 +13,7 @@ app.factory('userService', function($http, loginService) {
       }, function error(response) {
         if(response.status === 401) {
           alert('Время сессии закончилось. Нужно перелогиниться!');
-          loginService.logout();
+          loginService.logout(false);
         }
       });
     }

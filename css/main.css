@@ -1481,13 +1481,13 @@ margin-bottom:28px
 
 .tabs-controls--about-tvmax{
 text-align:center;padding:35px 0;
-margin-bottom:45px
+margin-bottom:25px
 }
 
 @media only screen and (max-width:1200px){
 	.tabs-controls--about-tvmax{
-		padding:20px 0;
-		text-align:left;margin-bottom:0
+		padding:20px 0 35px 0;
+		text-align:center;margin-bottom:0
 	}
 }
 
@@ -2122,20 +2122,32 @@ display:flex;
 -webkit-box-pack:justify;
 -ms-flex-pack:justify;justify-content:space-between
 }
-
+.ability__text-large {
+    width: 100%;
+    float: none;
+}
+.ability__item--marginBottom {
+    margin-bottom: 50px;
+}
 @media only screen and (max-width:1200px){
 .ability__item{
 
 display:block;
-margin-bottom:30px;
+margin-bottom:50px;
 }
 
 
 }
 @media only screen and (min-width: 630px) and (max-width:1200px){
 	.ability__item{
-		margin-bottom:40px;
+		margin-bottom:50px;
 		overflow: hidden;
+	}
+	.ability__sub-tite--underline{
+		margin-bottom: 10px;
+	}
+	.ability__devices-list{
+		margin-top: 25px;
 	}
 	.ability__pic.ability__pic--f-r{
 		width: 65%;
@@ -2144,6 +2156,14 @@ margin-bottom:30px;
 	.ability__pic.ability__pic--f-l {
 	    width: 65%;
 	    float: left;
+	}
+	.ability__text {
+	    float: left;
+	    width: 30%;
+	}
+	.ability__text-large {
+	    width: 100%;
+	    float: none;
 	}
 }
 .ability__item:last-child{
@@ -2171,7 +2191,27 @@ font-size:18px;
 
 font-size:1.125rem
 }
+.ability__descr--after {
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+    max-width: 500px;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+.ability__descr--after:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: #f0513d;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 
+}
 @media only screen and (max-width:1024px){
 .ability__descr{
 
@@ -2191,7 +2231,9 @@ font-size:2.25rem;
 line-height:1;
 color:#7d7d7d;font-family:robotolight;margin-bottom:10px
 }
-
+.ability__title--center {
+    text-align: center;
+}
 @media only screen and (max-width:1024px){
 .ability__title{
 

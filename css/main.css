@@ -2244,7 +2244,14 @@ font-size:1.625rem
 
 
 }
+@media only screen and (max-width:625px){
+	.ability__title{
+		max-width: 292px;
+	    text-align: center;
+	    margin: 5px auto;
+	}
 
+}
 @media only screen and (max-width:1024px){
 .ability__title strong{
 
@@ -2312,6 +2319,34 @@ border-right:0
 
 .ability__sub-list{
 padding-left:15px
+}
+@media only screen and (max-width:625px){
+	.ability__sub-list{
+		padding-left: 15px;
+	    display: flex;
+	    flex-flow: row wrap;
+	    justify-content: center;
+	}
+	.ability__sub-list--line:before, .ability__title--line:before {
+	    content: "";
+	    position: absolute;
+	    height: 100%;
+	    width: 1px;
+	    background:none;
+	    left: 0;
+	}
+
+	.ability__sub-item{
+		padding-left: 5px;
+    	padding-right: 5px;
+   		border-right: 1px solid #f0513d;
+	}
+	li.ability__sub-item:first-child {
+	    border-left: 1px solid #f0513d;
+	}
+	.ability__descr{
+		text-align: center;
+	}
 }
 .tabs-inner__instruction{
 

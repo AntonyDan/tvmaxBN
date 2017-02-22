@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta content="ie=edge" http-equiv="x-ua-compatible"/>
+    <meta name="description" content="Заглавная страница для подключения"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Главная</title>
+  </head>
+  <body class="body ">
+    <div class="connect-banner">
+          <span class="connect-banner__burger-icon"></span>
+          <img src="img/banner-logo.png" class="connect-banner__logo"></img>
+          <ul class="connect-banner__advantages-list">
+            <li class="connect-banner__advantages-line">Более 70 каналов</li>
+            <li class="connect-banner__advantages-line">Возможность просмотра <br>на всех устройствах</li>
+            <li class="connect-banner__advantages-line">Отложенный просмотр 48ч.</li>
+            <li class="connect-banner__advantages-line">Автоматически<br>обновляющаяся<br>программа передач</li>
+          </ul>
+           <a href="#" class="connect-banner__button">Подключиться</a>
+    </div>
+    <script src="js/19012017.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".connect-banner__burger-icon").on('click',function() {
+          $(".connect-banner").css({'display':'none'});
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -2000,6 +2000,20 @@ line-height:1
 		font-size:1.625rem
 	}
 }
+.tabs-inner__download-app{
+font-size:1.5rem;
+color:#ff6657;
+text-decoration: underline;
+margin-bottom:15px;
+margin: 0px auto 15px auto;
+line-height:1
+}
+
+@media only screen and (max-width:1024px){
+	.tabs-inner__download-app{
+		font-size:1.225rem
+	}
+}
 .for-instruction li{
 	margin-bottom: 5px;
 }

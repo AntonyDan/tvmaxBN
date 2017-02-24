@@ -1304,7 +1304,9 @@ color:#fff;font-family:robotoregular;cursor:pointer
 .registration-form .feedback-form__msg {
 margin-bottom:15px;	
 }
-
+.registration-form a {
+text-decoration: underline;
+}
 .feedback-form__msg--ok{
 background-color:#00e676
 }
@@ -1653,7 +1655,7 @@ font-size:1.5625rem
 
 .about-tvmax-bg{
 max-width:1920px;
-background-image:url(../img/about-tvmax-bg.jpg);background-color:#e1ded9;
+background-image:url(../img/about-tvmax-bg.jpg?v=1);background-color:#e1ded9;
 background-size:cover;position:relative;margin:auto;height:800px;
 height:calc(100vh - 98.39px)
 }
@@ -2588,139 +2590,3 @@ height:400px
 height:300px
 }
 }
-
-/*--------------------------BANNER---------------*/
-.connect-banner{
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width:100vw;
-	height: 100vh;
-	background: url("../img/Layer-11.jpg") no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-.connect-banner__logo{
-	width: 400px;
-}
-.connect-banner .connect-banner__logo{
-	padding-top: 0.5vh;
-    margin: 0px auto;
-}
-@media screen and (max-width: 500px) {
-	.connect-banner__logo{
-	    width: 300px;
-	}
-}
-.connect-banner__advantages-list{
-	width: 200px;
-    padding-top: 15vh;
-    padding-bottom: 10vh;
-    padding-left: 20px;
-    background: url(../img/banner-ul-bg.png) no-repeat;
-    background-position: 0px 0px;
-    background-size: 63px 100%;
-    color: white;
-}
-.connect-banner .connect-banner__advantages-list{
-    margin: 0px auto;
-    margin-top: -16vh;
-}
-.connect-banner__advantages-line {
-    margin-bottom: 3vh;
-    font-size: 16px;
-    font-family: Century Gothic;
-    padding-left: 35px;
-    background: url(../img/banner-ul-dot.png) no-repeat;
-    background-position: -10px 50%;
-    -webkit-background-size: 40px;
-    background-size: 40px;
-    color: rgb(186,186,186);
-}
-.connect-banner__advantages-line:last-child {
-    margin-bottom: 0px;
-}
-.connect-banner__burger-icon{
-	position: absolute;
-    top: 35px;
-    right: 35px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-@media screen and (max-width: 500px) {
-	.connect-banner__burger-icon{
-	   right: 0px;
-	   top: 27px;
-	}
-}
-.connect-banner__burger-icon,.connect-banner__burger-icon:after,.connect-banner__burger-icon:before{
-	display: block;
-    width: 40px;
-    height: 3px;
-    
-}
-@media screen and (max-width: 500px) {
-	.connect-banner__burger-icon,.connect-banner__burger-icon:after,.connect-banner__burger-icon:before{
-		display: block;
-	    width: 30px;
-	    height: 3px;
-	    
-	}
-}
-.connect-banner__burger-icon:after,.connect-banner__burger-icon:before{
-	position:absolute;
-	content:"";
-	background-color: white;
-}
-
-.connect-banner__burger-icon:before{
-	top:-8px;
-	-webkit-transform:translateY(8px) rotate(45deg);
-	 transform:translateY(8px) rotate(45deg);
-}
-
-.connect-banner__burger-icon:after{
-	top:8px;
-	-webkit-transform:translateY(-8px) rotate(-45deg);
-	transform:translateY(-8px) rotate(-45deg);
-}
-
-.connect-banner__button {
-    width: 222px;
-    height: 38px;
-    background-color: rgb(210,74,64);
-    color: white;
-    font-size: 26px;
-    font-family: Century Gothic;
-    display: block;
-    text-align: center;
-}
-.connect-banner .connect-banner__button {
-    margin: 0px auto;
-    left: 50%;
-    margin-top: 1px;
-}
-@media screen and (min-width: 1500px) {
-	.connect-banner__logo {
-	    width: 500px;
-	}
-	.connect-banner .connect-banner__logo {
-	    padding-top: 1.5vh;
-	}
-	.connect-banner__advantages-line {
-	    font-size: 23px;
-	    padding-left: 50px;
-	    background-position: -24px 50%;
-	    -webkit-background-size: 65px;
-	    background-size: 65px;
-	}
-	.connect-banner .connect-banner__advantages-list {
-	    margin-top: -13vh;
-	}
-	.connect-banner .connect-banner__button {
-	    margin-top:-5vh;
-	}
-}
-/*--------------------------END-BANNER---------------*/

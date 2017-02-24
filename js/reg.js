@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('#formPhoneNumber').mask("+375 (AB) 000-00-00", {translation: {'A': {pattern: /2|3|4/}, 'B': {pattern: /3|4|5|9/}}, placeholder: "+375 (XX) XXX-XXX-XXX"});
+	$('#formPhoneNumber').mask("+375 (AB) 000-00-00", {translation: {'A': {pattern: /2|3|4/}, 'B': {pattern: /3|4|5|9/}}, placeholder: "+375 (XX) XXX-XXX-XX"});
 	$('#formPhoneNumber').on("change", function() {
 		$('#reg-button-get-code').removeAttr("disabled");
 	});

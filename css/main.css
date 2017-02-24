@@ -1657,7 +1657,7 @@ font-size:1.5625rem
 max-width:1920px;
 background-image:url(../img/about-tvmax-bg.jpg?v=1);background-color:#e1ded9;
 background-size:cover;position:relative;margin:auto;height:800px;
-height:calc(100vh - 98.39px)
+height:calc(95vh - 156.39px);
 }
 
 @media only screen and (max-width:700px){
@@ -2452,9 +2452,9 @@ width:100%;padding:0 15px 40px
 
 .scroll-down{
 position:absolute;bottom:10px;
-width:30px;
-height:30px;
-left:50%;margin-left:-15px;
+width:40px;
+height:40px;
+left:50%;margin-left:-20px;
 
 -webkit-animation-name:b;animation-name:b;
 -webkit-animation-duration:3s;animation-duration:3s;
@@ -2485,7 +2485,7 @@ display:block;width:100%;height:100%
 }
 
 .scroll-down__icon path{
-fill:#fff
+fill:#656565;
 }
 
 @

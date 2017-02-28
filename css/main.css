@@ -1173,7 +1173,7 @@ display:block
 .feedback-form__input{
 
 display:block;background-color:#1b1b1b;border:1px solid #838485;
-margin-bottom:25px;
+margin-bottom:15px;
 padding:0 15px 0 25px;
 color:#eef0f2;
 
@@ -1258,7 +1258,7 @@ color:#eef0f2;
 font-size:14px;
 
 font-size:.875rem;
-height:200px;
+height:180px;
 resize:none;width:100%
 }
 

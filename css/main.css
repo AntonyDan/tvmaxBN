@@ -1654,17 +1654,42 @@ font-size:1.5625rem
 }
 
 .about-tvmax-bg{
+position: relative;
 max-width:1920px;
-background-image:url(../img/about-tvmax-bg.jpg?v=1);background-color:#e1ded9;
-background-size:cover;position:relative;margin:auto;height:800px;
+background: url(../img/about-tvmax-bg.png?v=2) no-repeat;
+background-size: cover;
+background-position: bottom;
+background-color:#e1ded9;
+position:relative;margin:auto;height:800px;
 height:calc(95vh - 156.39px);
 }
-
-@media only screen and (max-width:700px){
-	.about-tvmax-bg{
-		height:300px
+.about-tvmax-bg__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    bottom: 0%;
+}
+@media only screen and (max-width:1450px){
+	.about-tvmax-bg__logo {
+	    position: absolute;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    bottom: 0%;
+	    height: 85%;
+	    width: auto;
 	}
 }
+@media only screen and (max-width:700px){
+	.about-tvmax-bg{
+		height:300px;
+	}
+}/*
+@media only screen and (max-width:600px){
+	.about-tvmax-bg{
+		background-size: auto 100%;
+	}
+}*/
 @media only screen and (max-width:500px){
 	.about-tvmax-bg{
 		height:250px
@@ -2165,6 +2190,11 @@ margin-bottom:50px;
 
 
 }
+@media only screen and (min-width:1200px){
+	.ability__pic.ability__pic--f-r, .ability__pic.ability__pic--f-l {
+	    width: 100%;
+	}
+}
 @media only screen and (min-width: 630px) and (max-width:1200px){
 	.ability__item{
 		margin-bottom:50px;
@@ -2177,11 +2207,11 @@ margin-bottom:50px;
 		margin-top: 25px;
 	}
 	.ability__pic.ability__pic--f-r{
-		width: 65%;
+		width: 70%;
 	    float: right;	
 	}
 	.ability__pic.ability__pic--f-l {
-	    width: 65%;
+	    width: 70%;
 	    float: left;
 	}
 	.ability__text {
@@ -2468,7 +2498,7 @@ animation-iteration-count:7;
 .scroll-down{
 
 -webkit-animation:none;animation:none;
-display:none
+display:block
 }
 
 
@@ -2481,7 +2511,8 @@ display:none
 
 .scroll-down__icon{
 
-display:block;width:100%;height:100%
+display:block;width:100%;height:100%;
+z-index: 500;
 }
 
 .scroll-down__icon path{

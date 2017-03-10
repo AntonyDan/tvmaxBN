@@ -1668,14 +1668,13 @@ height:calc(95vh - 156.39px);
     left: 50%;
     transform: translateX(-50%);
     width: 50%;
-    bottom: 0%;
+    bottom: 20px;
 }
 @media only screen and (max-width:1450px){
 	.about-tvmax-bg__logo {
 	    position: absolute;
 	    left: 50%;
 	    transform: translateX(-50%);
-	    bottom: 0%;
 	    height: 85%;
 	    width: auto;
 	}
@@ -1694,6 +1693,13 @@ height:calc(95vh - 156.39px);
 	.about-tvmax-bg{
 		height:250px
 	}
+}
+.about-tvmax-bg__button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    bottom: 0%;
 }
 .about-tvmax{
 max-width:1040px;

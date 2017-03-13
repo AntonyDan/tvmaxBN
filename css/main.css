@@ -1655,7 +1655,6 @@ font-size:1.5625rem
 
 .about-tvmax-bg{
 position: relative;
-max-width:1920px;
 background: url(../img/about-tvmax-bg.png?v=2) no-repeat;
 background-size: cover;
 background-position: bottom;
@@ -1700,6 +1699,15 @@ height:calc(95vh - 156.39px);
     transform: translateX(-50%);
     width: 300px;
     bottom: 0%;
+}
+@media only screen and (min-width:1450px){
+	.about-tvmax-bg__button {
+	    position: absolute;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    width: 300px;
+	    bottom: 3%;
+	}
 }
 .about-tvmax{
 max-width:1040px;

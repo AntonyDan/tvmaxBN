@@ -766,10 +766,12 @@ strong {
           -ms-transform: translateX(-100%);
               transform: translateX(-100%); }
               .container__item.active{
-                background: rgba(111,111,111,0.9);
+                background: rgba(111,111,111,0.5);
               }
   .container__item.active .container__channel-name {
     font-weight: 700; }
+  
+  /*просто добавить класс record*/
   .container__item.record .container__link:after {
       display: block;
       content: "";
@@ -787,14 +789,37 @@ strong {
       font-weight: 100;
       text-transform: uppercase;
       font-size: 12px;
-      content: "record" !important;
+      content: "REC" !important;
       top: 10px;
       right: -18px;
       -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
       transform: translateX(-100%);
   }
-.container__item--schedule.active .container__link:before, .container__item--schedule.active .container__link:after {
+  .schedule_button.schedule_live {
+      float: left;
+      margin-right: 10px;
+      width: 25px;
+      height: 25px;
+      background-size: cover;
+  }
+  .button_live{
+    background:url('../img/liveButton.svg');
+  }
+  .button_record{
+    background:url('../img/recordButton.svg');
+  }
+  /* между  <strong class="schedule__time ng-binding">00:10</strong> 
+      и 
+            <p class="schedule__description">........................</p>
+      вставить кнопку лайва----> <a class="schedule_button button_live"></a>
+      или кнопку записи ----->   <a class="schedule_button button_record"></a>
+      например: 
+      <strong class="schedule__time ng-binding">00:10</strong> 
+      <a class="schedule_button button_live"></a>
+      <p class="schedule__description">....</p>
+  */
+  .container__item--schedule.active .container__link:before, .container__item--schedule.active .container__link:after {
   display: none; }
 
 .container__link {
@@ -907,5 +932,6 @@ strong {
   .schedule__description {
     overflow: hidden;
     color: #3d3d3f; }
+    
     .schedule__description strong {
-      font-weight: 500; }
+      font-weight: bold; }

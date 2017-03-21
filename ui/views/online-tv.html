@@ -1,13 +1,21 @@
-
-<section class="section section--onlineTV">
-  <div class="container">
-    <div class="container__left container__left--mediaPlayer">
-      <div id="mediaPlayer"></div>
-    </div>
-    <div class="container__right container__right--mediaPlayer">
-      <ul class="container__list">
-        <li class="container__item" ng-class="{active: $index === selectedItem}" ng-repeat="channel in channels" ng-click="loadStream(); setActive($index)"><a class="container__link" href=""><img class="container__img" ng-src="{{channel.img}}" alt="Иконка канала"/><strong class="container__channel-name">{{channel.name}}</strong></a></li>
-      </ul>
-    </div>
-  </div>
-</section>
+<div ng-show="is_load">
+	<div ng-hide="is_error">
+		<section class="section section--onlineTV" ng-show="is_active">
+		  <div class="container" id="container">
+		    <div class="container__left container__left--mediaPlayer">
+		      <div id="mediaPlayer"></div>
+		    </div>
+		    <div class="container__right container__right--mediaPlayer">
+		      <ul class="container__list">
+		        <li class="container__item" ng-class="{active: channel.id == selectedChannel}" ng-repeat="channel in channels" ng-click="loadStream(); setActive(channel.id); jumpToUp();"><a class="container__link" href=""><img class="container__img" ng-src="{{channel.img}}" alt="Иконка канала {{channel.name}}"/><strong class="container__channel-name">{{channel.name}}</strong></a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</section>
+		<div class="profile" ng-hide="is_active">
+			Страница доступна только с положительным балансом
+		</div>
+	</div>
+	<div class="profile" ng-show="is_error">Ошибка сервиса! Попробуйте, пожалуйста, позже.</div>
+</div>
+<div class="profile" ng-hide="is_load">Пожалуйста, подождите...</div>

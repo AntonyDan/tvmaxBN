@@ -765,9 +765,35 @@ strong {
       -webkit-transform: translateX(-100%);
           -ms-transform: translateX(-100%);
               transform: translateX(-100%); }
+              .container__item.active{
+                background: rgba(111,111,111,0.9);
+              }
   .container__item.active .container__channel-name {
     font-weight: 700; }
-
+  .container__item.record .container__link:after {
+      display: block;
+      content: "";
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: #e94b3a;
+      background-size: 10px 10px;
+      z-index: 1;
+      right: 10px;
+  }
+  .container__item.record .container__link:before {
+      position: absolute;
+      font-weight: 100;
+      text-transform: uppercase;
+      font-size: 12px;
+      content: "record" !important;
+      top: 10px;
+      right: -18px;
+      -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      transform: translateX(-100%);
+  }
 .container__item--schedule.active .container__link:before, .container__item--schedule.active .container__link:after {
   display: none; }
 

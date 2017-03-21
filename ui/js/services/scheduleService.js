@@ -4,7 +4,7 @@ app.factory('scheduleService', function($http) {
 
   return {
     getData: function(access_token, data) {
-      return $http.get('http://212.98.181.67/TV/api/Packages/GetProgramme', {
+      return $http.get('http://212.98.181.67/TV/api/Packages/GetProgrammeByDay', {
         headers: {
           "access_token": access_token
         },

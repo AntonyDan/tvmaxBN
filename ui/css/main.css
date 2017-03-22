@@ -782,7 +782,7 @@ strong {
       background-color: #e94b3a;
       background-size: 10px 10px;
       z-index: 1;
-      right: 10px;
+      right: 0px;
   }
   .container__item.record .container__link:before {
       position: absolute;
@@ -791,12 +791,13 @@ strong {
       font-size: 12px;
       content: "REC" !important;
       top: 10px;
-      right: -18px;
+      right: 35px;
+      background: none;
       -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
       transform: translateX(-100%);
   }
-  .schedule_button.schedule_live {
+  .schedule_button {
       float: left;
       margin-right: 10px;
       width: 25px;
@@ -805,9 +806,11 @@ strong {
   }
   .button_live{
     background:url('../img/liveButton.svg');
+    background-size: cover;
   }
   .button_record{
     background:url('../img/recordButton.svg');
+    background-size: cover;
   }
   /* между  <strong class="schedule__time ng-binding">00:10</strong> 
       и 

@@ -16,3 +16,69 @@ $(function() {
   })
 })
 })(jQuery);
+
+/*var simpleParticle = (function () {
+  var canvas = document.getElementById("canvas"),
+      context = canvas.getContext("2d"),
+      bgWidth = document.querySelector('.about-tvmax-bg').scrollWidth,
+      bgHeight = document.querySelector('.about-tvmax-bg').scrollHeight;
+
+
+  canvas.width = bgWidth;
+  canvas.height = bgHeight;
+  var maxDist = 100;
+  var nodes = [];
+
+  for (var i = 0; i < 200; i++) {
+    nodes.push({
+      x: Math.random() * bgWidth,
+      y: Math.random() * bgHeight,
+      vx: Math.random() * 0.5 - 0.3,
+      vy: Math.random() * 0.5 - 0.3
+    });
+  }
+
+  update();
+
+  function update() {
+    context.clearRect(0, 0, bgWidth, bgHeight);
+    for (var i = 0; i < 200; i++) {
+      var node = nodes[i];
+      node.x += node.vx;
+      node.y += node.vy;
+      if (node.x >bgWidth) {
+        node.x = 0;
+      } else if (node.x < 0) {
+        node.x = bgWidth;
+      }
+      if (node.y > bgHeight) {
+        node.y = 0;
+      } else if (node.y < 0) {
+        node.y = bgHeight;
+      }
+      context.beginPath();
+      context.strokeStyle = '#b5abab';
+      context.fillStyle = '#b5abab';
+      context.arc(node.x, node.y, 0.5, 0, Math.PI * 2);
+      context.fill();
+    }
+
+    for (var i = 0; i < nodes.length - 1; i++) {
+      var nodeA = nodes[i];
+      for (var j = i + 1; j < nodes.length; j++) {
+        var nodeB = nodes[j];
+        var dx = nodeB.x - nodeA.x,
+          dy = nodeB.y - nodeA.y,
+          dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < maxDist) {
+          context.lineWidth = 1 - dist / maxDist;
+          context.beginPath();
+          context.moveTo(nodeA.x, nodeA.y);
+          context.lineTo(nodeB.x, nodeB.y);
+          context.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(update);
+  }
+})();*/

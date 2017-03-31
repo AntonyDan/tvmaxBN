@@ -2668,6 +2668,14 @@ height:300px
 	top: 15px;
     right: 12px;
 }
+.banner__redirect-btn{
+	width: 340px;
+    height: 52px;
+    background: url(../img/banner-btn.png) no-repeat;
+    position: absolute;
+    bottom: 47px;
+    right: 51px;
+}
 @media screen and (max-width: 900px){
 	.banner{
 		position: absolute;
@@ -2677,5 +2685,12 @@ height:300px
 		width: 320px;
 		height: 550px;
 		background: url('../img/banner-adapt.png') no-repeat;
+	}
+	.banner__redirect-btn{
+		width: 300px;
+	    height: 50px;
+	    background: url(../img/banner-btn-adapt.png) no-repeat;
+	    bottom: 20px;
+	    right: 11px;
 	}
 }

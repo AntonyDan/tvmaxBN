@@ -20,7 +20,18 @@ $(function() {
 
 function bannerInit(){
 	$(".banner-layout").css({'display':'block'});
-	$(".banner__close-btn").on('click',function() {
+	$(".banner__close-btn").on('click',function(event) {
+		event.stopPropagation()
+	  	$(".banner-layout").animate({opacity: 0.0},1000,
+	  		function () {
+		  		$(".banner-layout").css({'display':'none'});
+		  	}
+	  	);
+	});
+	$(".banner").on('click',function(event) {
+		event.stopPropagation();
+	});
+	$(".banner-layout").on('click',function() {
 	  	$(".banner-layout").animate({opacity: 0.0},1000,
 	  		function () {
 		  		$(".banner-layout").css({'display':'none'});

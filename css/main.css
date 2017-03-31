@@ -1733,6 +1733,7 @@ margin:auto
 }
 .reg_tv-characteristics{
 	margin-bottom: 50px;
+	margin-top: 50px;
 }
 h2.reg_title {
     font-size: 36px;
@@ -2637,4 +2638,44 @@ height:400px
 .map{
 height:300px
 }
+}
+.banner-layout{
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0, 0.7);
+	z-index: 10000;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+.banner{
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translateX(-50%);
+	width: 895px;
+	height: 395px;
+	z-index: 10001;
+	background: url('../img/banner.png') no-repeat;
+}
+
+.banner__close-btn{
+	width: 30px;
+	height: 32px;
+	background: url('../img/close-btn.png') no-repeat;
+	position: absolute;
+	top: 15px;
+    right: 12px;
+}
+@media screen and (max-width: 900px){
+	.banner{
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translateX(-50%);
+		width: 320px;
+		height: 550px;
+		background: url('../img/banner-adapt.png') no-repeat;
+	}
 }

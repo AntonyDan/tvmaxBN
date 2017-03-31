@@ -17,6 +17,19 @@ $(function() {
 })
 })(jQuery);
 
+
+function bannerInit(){
+	$(".banner-layout").css({'display':'block'});
+	$(".banner__close-btn").on('click',function() {
+	  	$(".banner-layout").animate({opacity: 0.0},1000,
+	  		function () {
+		  		$(".banner-layout").css({'display':'none'});
+		  	}
+	  	);
+	});
+}
+
+
 /*var simpleParticle = (function () {
   var canvas = document.getElementById("canvas"),
       context = canvas.getContext("2d"),

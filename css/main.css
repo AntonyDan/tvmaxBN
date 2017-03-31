@@ -1662,56 +1662,125 @@ background-color:#e1ded9;
 position:relative;margin:auto;height:800px;
 height:calc(95vh - 156.39px);
 }
-#canvas{
-	position: absolute;
-}
 .about-tvmax-bg__logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    padding-top: 6vh;
     width: 50%;
-    bottom: 20px;
+    margin: 0px auto;
+}
+.about-tvmax-bg__logo-text{
+	margin: 1vh auto 0px auto;
+}
+.logo-text{
+	max-width: 25.4vw;
+    width: 100%;
+    background: url(../img/logo-text-bg.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 25px;
+    text-align: center;
+}
+.logo-text__item{
+	font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-top: 11px;
+}
+.logo-text__item--medium{
+	font-size: 2.16vw;
+}
+.logo-text__item--small{
+	font-size: 1.592vw;
+}
+.logo-text__item--big{
+	font-size: 2.52vw;
+    line-height: 2.4vw;
+}
+.logo-text__item--blue{
+	color: rgb(60,216,213);
+}
+.about-tvmax-bg__button{
+	display: block;
+    width: 33vw;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 5vh auto 0px auto;
+    font-size: 3.5vw;
+    padding: 10px 0px;
+    background-color: rgb(255,75,61);
+    text-align: center;
 }
 @media only screen and (max-width:1450px){
 	.about-tvmax-bg__logo {
-	    position: absolute;
-	    left: 50%;
-	    transform: translateX(-50%);
-	    height: 85%;
-	    width: auto;
+	    padding-top: 3vh;
+    	width: 470px;
+	}
+	.about-tvmax-bg__logo-text{
+		margin: 1vh auto 0px auto;
+	}
+	.logo-text{
+		max-width: 315px;
+	    padding: 20px;
+	}
+	.logo-text__item{
+	}
+	.logo-text__item--medium{
+		font-size: 25px;
+	}
+	.logo-text__item--small{
+		font-size: 18.3px;
+	}
+	.logo-text__item--big{
+		font-size: 29px;
+	    line-height: 29px;
+	}
+	.about-tvmax-bg__button{
+		width: 100%;
+    	max-width: 315px;
+	    margin: 3vh auto 0px auto;
+	    font-size: 35px;
 	}
 }
-@media only screen and (max-width:700px){
-	.about-tvmax-bg{
-		height:300px;
+@media only screen and (max-width:768px){
+	.about-tvmax-bg__logo {
+	    padding-top: 3vh;
+    	width: 335px;
 	}
-}/*
-@media only screen and (max-width:600px){
-	.about-tvmax-bg{
-		background-size: auto 100%;
+	.about-tvmax-bg__logo-text{
+		margin: 1vh auto 0px auto;
 	}
-}*/
+	.logo-text{
+		max-width: 231px;
+    	padding: 13px;
+	}
+	.logo-text__item{
+		margin-top: 5px;
+	}
+	.logo-text__item--medium{
+		font-size: 20px;
+	}
+	.logo-text__item--small{
+		font-size: 14.7px;
+	}
+	.logo-text__item--big{
+		font-size: 23.3px;
+	    line-height: 16px;
+	}
+	.about-tvmax-bg__button{
+    	max-width: 231px;
+	    font-size: 25px;
+	    padding: 5px 0px;
+	}
+}
+
 @media only screen and (max-width:500px){
-	.about-tvmax-bg{
-		height:250px
+	.about-tvmax-bg__logo {
+	    padding-top: 3vh;
+    	width: 280px;
 	}
 }
-.about-tvmax-bg__button {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 300px;
-    bottom: 0%;
-}
-@media only screen and (min-width:1450px){
-	.about-tvmax-bg__button {
-	    position: absolute;
-	    left: 50%;
-	    transform: translateX(-50%);
-	    width: 300px;
-	    bottom: 3%;
-	}
-}
+
 .about-tvmax{
 max-width:1040px;
 margin:auto

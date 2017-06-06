@@ -4,15 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta content="ie=edge" http-equiv="x-ua-compatible"/>
-    <meta name="description" content="Описание приставки TVMaX, её характеристики и преимущества"/>
-    <link rel="stylesheet" href="css/main.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,700,900" rel="stylesheet">
+    <meta name="description" content="Регистрация"/>
+    <link rel="stylesheet" href="css/main.css?v=8"/>
     <title>Регистрация</title>
-    <script async="async">
-      (function(){ var widget_id = 'CvYlmGOAYm';var d=document;var w=window;function l(){
-      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-    </script>
-	<script async>
+  <script async>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -21,29 +16,58 @@
       ga('create', 'UA-65342029-3', 'auto');
       ga('send', 'pageview');
     </script>
+    <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+              try {
+                  w.yaCounter43111024 = new Ya.Metrika({
+                      id:43111024,
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true,
+                      webvisor:true
+                  });
+              } catch(e) { }
+          });
+  
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/43111024" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
   </head>
   <body class="body ">
     <div class="wrapper">
       <div class="content">
         <header class="header header--about-tvmax">
           <div class="container container--header">
-            <h1 class="logo logo--header"><a href="." class="logo__link"> <img src="img/logo.png" alt="Логотип TVMaX"/></a></h1>
+            <h1 class="logo logo--header"><a href="." class="logo__link"> <img src="img/logo.png?v=1" alt="Логотип TVMaX"/></a></h1>
             <nav class="site-nav"><a href="#" id="menuButton" class="menu-button"><span class="burger-icon"></span></a>
               <ul class="site-nav__list">
-                <li class="site-nav__item "><a href="about-tvmax.html" class="site-nav__link">О TV MaX</a></li>
+                <li class="site-nav__item "><a href="/" class="site-nav__link">О TV MAX</a></li>
                 <li class="site-nav__item"><a href="channels.html" class="site-nav__link">Список каналов</a></li>
                 <li class="site-nav__item"><a href="contacts.html" class="site-nav__link">Контакты</a></li>
-                <li class="site-nav__item"><a href="/ui/" class="site-nav__link">Личный кабинет</a></li>
+                <li class="site-nav__item"><a href="http://ui.tvmax.by/login.html" class="site-nav__link">Личный кабинет</a></li>
                 <li class="site-nav__item site-nav__item--active"><a href="registration.html" class="site-nav__link">Регистрация</a></li>
-                <li class="site-nav__item"><a href="https://bn.by/home/" class="site-nav__link">Еще +</a></li>
+        <li class="site-nav__item"><a href="https://bn.by/home/" class="site-nav__link">Еще +</a></li>
               </ul>
             </nav>
           </div>
         </header>
         <div class="banner-layout">
           <div class="banner">
-            <a class="banner__close-btn"></a>
-            <a class="banner__redirect-btn"></a>
+            <a class="banner__close-btn" href="javascript:"></a>
+            <a class="banner__redirect-btn" href="http://ui.tvmax.by"></a>
           </div>
         </div>
         <main id="main" data-page="registration" class="main main--no-padding">
@@ -52,10 +76,8 @@
               <h2 class="reg-form_title">Регистрация</h2>
               <input type="hidden" id="formToken" name="TOKEN" value="Ssf459Jkuui">
               <label for="formFirstname">Имя</label><input id="formFirstname" name="first_name" type="text" required>
-              <label for="formLastname">Фамилия</label><input id="formLastname" name="last_name" type="text" required>
               <label for="formPassword">Придумайте пароль <small><br>не менее 6 символов, состоящий из букв латинского алфавита или цифр</small></label><input id="formPassword" name="password" type="password" required>
               <label for="formPasswordR">Повторите пароль</label><input id="formPasswordR" name="password_r" type="password" required>
-              <label for="formPassportNumber">Личный номер паспорта</label><input id="formPassportNumber" name="passport_number" type="text" required>
               <label for="formEmail">Email</label><input id="formEmail" name="email" type="email" required>
               <label for="formPhoneNumber">Мобильный телефон</label><input id="formPhoneNumber" name="phone_number" type="tel" required>
               <label class="phone-code" for="formPhoneCode">На ваш мобильный номер будет отправлен код подтверждения,
@@ -63,19 +85,19 @@
                   <input id="formPhoneCode" name="phone_code" type="text" required>
               <button type="button" id="reg-button-get-code" class="reg-button">Получить код</button>
               <div id="sendMsg" class="feedback-form__msg"></div>
+              <label for="formPromocode">Промокод<br><span class = 'bold-label'>буквы и цифры вводятся БЕЗ дефиса и пробелов</span></label><input id="formPromocode" name="promocode" type="text">
               <div class="for-checkbox"><input type="checkbox" id="formCheck" name="confirm_checkbox" required>
-              <label for="formCheck" class="confirm_label">Ознакомлен и согласен с публичным договором</label></div>
-              <p class="form-time"><span>*</span>  После подтверждения регистрации, услугой TV MAX можно будет воспользоваться бесплатно до 00.00 </p>
+              <label for="formCheck" class="confirm_label">Ознакомлен и согласен с <a target="_blank" href="/files/Public_contract_TvMax.pdf">публичным договором</a></label></div>
+              <!--<p class="form-time"><span>*</span>  После подтверждения регистрации, услугой TV MAX можно будет воспользоваться бесплатно до 00.00 </p> -->
               <div id="regMsg" class="feedback-form__msg"></div>
-              <button type="submit" class="reg-button submit-btn">Регистрация</button>
-            </form>
+              <button type="submit" class="reg-button submit-btn" onsubmit="ga('send', 'event', 'form', 'register_ok');return true;">Регистрация</button>            </form>
             <div class="reg_tv-characteristics">
               <h3 class="many"> Стоимость 7р</h3>
               <h3 class="reg_sub-title">Телевидение TV MAX</h3>
               <ul class="reg_characteristics-list">
-                <li class="reg_charachter__item">Более 75 каналов в т.ч. в формате HD</li>
+                <li class="reg_charachter__item">Более 70 каналов в т.ч. в формате HD</li>
                 <li class="reg_charachter__item">Возможность одновременного просмотра на 5 устройствах</li>
-                <li class="reg_charachter__item">Интерактивные функции: отложенный просмотр до 48 часов, постановка на паузу, архив телепердач</li>
+                <li class="reg_charachter__item">Интерактивные функции: отложенный просмотр до 48 часов, постановка на паузу, архив телепередач</li>
                 <li class="reg_charachter__item">Просмотр каналов в любое время в любом месте: компьютеры, смартфоны и планшеты Android,<br/>
                 телевизоры с функцией SmartTV или с использованием Android приставки</li>
                 <li class="reg_charachter__item">Хорошее качество видео независимо от скорости интернета</li>
@@ -147,35 +169,32 @@
       <div class="footer__container">
         <nav class="footer-menu">
           <ul class="footer-menu__list">
-            <li class="footer-menu__item"><a href="about-tvmax.html" class="footer-menu__link">О TV MaX</a></li>
+            <li class="footer-menu__item"><a href="/" class="footer-menu__link">О TV MAX</a></li>
             <li class="footer-menu__item"><a href="channels.html" class="footer-menu__link">Список каналов</a></li>
             <li class="footer-menu__item"><a href="contacts.html" class="footer-menu__link">Контакты      </a></li>
-            <li class="footer-menu__item"><a href="/ui/" class="footer-menu__link">Личный кабинет</a></li>
-			<li class="footer-menu__item"><a href="registration.html" class="footer-menu__link">Регистрация</a></li>
-      <li class="footer-menu__item"><a href="https://bn.by/home/" class="footer-menu__link">Регистрация</a></li>
+            <li class="footer-menu__item"><a href="http://ui.tvmax.by/login.html" class="footer-menu__link">Личный кабинет</a></li>
+      <li class="footer-menu__item"><a href="registration.html" class="footer-menu__link">Регистрация</a></li>
+      <li class="footer-menu__item"><a href="license.html" class="footer-menu__link">Политика конфиденциальности</a></li>
+      <li class="footer-menu__item"><a href="https://bn.by/home/" class="footer-menu__link">Еще +</a></li>
           </ul>
         </nav>
-        <div class="copyright">© 2017 «Деловая сеть»</div>
+        <div class="copyright">© 2017 «Деловая сеть» УНП 101541870</div>
       </div>
     </div>
     <div id="fullpageMenu" class="fullpage-menu fullpage-menu--hide">
       <ul class="fullpage-menu__list">
-        <li class="fullpage-menu__item"><a href="about-tvmax.html" class="fullpage-menu__link">О TV MaX</a></li>
+        <li class="fullpage-menu__item"><a href="/" class="fullpage-menu__link">О TV MAX</a></li>
         <li class="fullpage-menu__item"><a href="channels.html" class="fullpage-menu__link">Список каналов</a></li>
         <li class="fullpage-menu__item"><a href="contacts.html" class="fullpage-menu__link">Контакты</a></li>
-        <li class="fullpage-menu__item"><a href="/ui/" class="fullpage-menu__link">Личный кабинет</a></li>
-		<li class="fullpage-menu__item"><a href="registration.html" class="fullpage-menu__link">Регистрация</a></li>
+        <li class="fullpage-menu__item"><a href="http://ui.tvmax.by/login.html" class="fullpage-menu__link">Личный кабинет</a></li>
+    <li class="fullpage-menu__item"><a href="registration.html" class="fullpage-menu__link">Регистрация</a></li>
     <li class="fullpage-menu__item"><a href="https://bn.by/home/" class="fullpage-menu__link">Еще +</a></li>
-    
       </ul>
     </div>
-
+  
     <script src="js/19012017.js"></script>
-    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="//code.jquery.com/jquery-1.8.3.js"></script>
     <script src="js/jquery.mask.min.js" type="text/javascript"></script>
-    <script src="js/reg.js"></script>
-    <script type="text/javascript">
-      bannerInit();
-    </script>
+    <script src="js/reg.js?v=5"></script>
   </body>
 </html>
